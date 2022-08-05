@@ -1,0 +1,40 @@
+:root{
+    scroll-behavior: smooth;
+}
+.body{
+    background-color: rgb(212, 212, 212);
+    margin: 0;
+}
+.header-nav{
+    padding: 1rem 0;
+}
+.header-container{
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    
+}
+.header-nav__link-logo-container{
+    display: flex;
+    /* background-color: blue; */
+}
+.header-nav__link-logo{
+    width: 120;
+    height: 106;
+}
+.header-nav__menu-list-container{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    /* background-color: blueviolet; */
+    column-gap: 3rem;
+}
+.header-nav__menu-list{
+    color: rgb(76, 76, 76);
+    text-decoration: none;
+}
+.header-nav__menu-list:hover{
+    color: #F01313;
+}
