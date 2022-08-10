@@ -214,3 +214,70 @@
     width: 100%;    
     margin: 0;
 }
+/* .i-hero__img-tech:hover{
+    filter: grayscale(1);
+} */
+
+  .experience {
+    background-color: #282c34;
+  }
+  
+  .experiencetitle {
+    margin: 0;
+  }
+
+  .skills{
+    display: flex;
+    align-items: center;
+    background-color: rgb(31, 31, 31);
+    height: 100vh;
+  }
+  .skills__container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding:0 1rem;
+    gap: 2rem   ;
+
+  }
+  .skill-tech{
+    border: #fff 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    position: relative;
+    padding: 4rem;
+    filter: grayscale(1);
+  }
+  .skill-tech:hover{
+    filter: grayscale(0);
+    box-shadow:
+    inset 0 0 60px whitesmoke,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+  }
+  .skill-tech:hover>p{
+    display: block;
+  }
+  .skill-tech__title{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+
+  }
+  .skill-tech__description{
+    display: none;
+    margin: 0;
+  }
+  .skill-tech__img{
+    
+    /* display: block; */
+  }
+  
