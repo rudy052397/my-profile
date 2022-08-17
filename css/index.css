@@ -1,5 +1,23 @@
 :root {
   scroll-behavior: smooth;
+	--primary-theme-color: #20232a;
+	--secondary-theme-color: #282c34;
+	--primary-text-color: #fff;
+	--secondary-text-color: #eee;
+	--reverse-primary-text-color: #000;
+	--primary-shadow-color: #20232a80;
+	--secondary-shadow-color: #00000040;
+	--reverse-primary-shadow-color: #fff8;
+	--primary-highlight-color: #61dafb;
+	--secondary-highlight-color: gold;
+	--primary-button-color: #61dafb;
+	--secondary-button-color: gold;
+	--primary-invalid-color: crimson;
+	--primary-font-family: 'inconsolata', monospace;
+	--padding-section: 1.5rem 0;
+	--padding-container: 0 1rem;
+	--max-width-container: 640px;
+	--primary-border-radius: 0.5rem;
 }
 
 .body {
@@ -8,55 +26,9 @@
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-.header {
-  position: fixed;
-  background-color: transparent;
-  width: 100vw;
-  top: 0;
-  left: 0;
-  z-index: 25;
-  box-shadow: 0 0 0.625rem;
-}
-
-.header-nav {
-  padding:0 0;
-}
-
 @media (min-width: 768px) {
-  .header-nav {
-    padding: 0.625rem;
-  }
-}
-
-.header-nav__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1rem;
-  margin: 0 auto;
-  gap: 0.3rem;
-}
-
-@media (min-width: 768px) {
-  .header-nav__container {
-    max-width: 1200px;
-    flex-direction: row;
-    gap: 0;
-  }
-}
-
-.header-nav__link-logo-container {
-  display: flex;
-}
-
-.header-nav__link-logo {
-  width: 90px;
-}
-
-@media (min-width: 768px) {
-  .header-nav__link-logo {
-    width: 120px;
+  :root{
+    --max-width-container: 1080px;
   }
 }
 
@@ -69,11 +41,6 @@
   margin: 0;
   width: 100%;
   
-}
-
-@media (min-width: 768px) {
-  .header-nav__menu-list-container {
-  }
 }
 
 .header-nav__menu-link {
