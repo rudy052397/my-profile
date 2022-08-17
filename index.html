@@ -41,67 +41,42 @@
 </head>
 
 <body class="body">
-	<header class="header section--headed">
+	<header class="header">
 		<nav class="nav">
 			<div class="container container--headed">
-				<label for="menu">
-					<i class="bi bi-list"></i>
+				<input type="checkbox" class="menu__checkbox" id="menu" />
+				<div class="header-style section--headed"></div>
+				<label for="menu" class="menu__icon">
+					<div class="menu__icon-line"></div>
 				</label>
-				<label for="menu">
-					<i class="bi bi-list"></i>
-				</label>
-				<input type="checkbox" class="menu__checkbox" id="menu"/>
-				<a href="#">
-					<img src="./assets/svg/logo4.svg" alt="404 not found" class="nav__link-logo" height="65" width="84" />
+				<a href="#" class="nav__link-logo-container">
+					<img src="./assets/svg/logo.svg" alt="404 not found" class="nav__link-logo" height="65" width="84" />
 				</a>
 				<ul class="menu menu--hamburger">
 					<li>
-							<a href="#iSkills" class="header-nav__menu-link"><label for="menu">SKILL</label></a>
-					</li>
-					
-					<li>
-						<a href="#" class="header-nav__menu-link">EXPERIENCIA</a>
+						<a href="#iSkills" class="menu__link">SKILL</a>
 					</li>
 					<li>
-						<a href="#" class="header-nav__menu-link">PROYECTOS</a>
+						<a href="#" class="menu__link">EXPERIENCIA</a>
 					</li>
 					<li>
-						<a href="#" class="header-nav__menu-link">CONTACTO</a>
+						<a href="#" class="menu__link">PROYECTOS</a>
+					</li>
+					<li>
+						<a href="#" class="menu__link">CONTACTO</a>
 					</li>
 				</ul>
-				
+				<div class="menu-wildcard"></div>
 			</div>
 		</nav>
 	</header>
 	<main>
 		<article class="i-hero" id="iHero">
 			<div class="i-hero__container">
-				<!-- <div class="i-hero__img-container">
-					<div class="i-hero__img-pro-tech-container">
-						<img src="./assets/img/img-i-hero.jpg" alt="Rudy Mendoza" width="400" height="512"
-							class="i-hero__img-pro" />
-
-					</div>
-				</div> -->
 				<div class="i-hero__info-container">
 					<h1 class="i-hero__info-title">Rudy Mendoza</h1>
 					<h2 class="i-hero__info-subtitle">Los mejores diseños y desarrollos de páginas web en el Perú</h2>
-					<!-- <p class="i-hero__info-paragraph">
-						Somos el mejor lugar donde puedes aprender sobre desarrollo web frontend. Asimismo, con Base 2
-						by Web 4B
-						puedes hacer realidad ese sueño que tienes en mente. ¡Cambia tu vida!
-					</p> -->
 					<a href="https://github.com/rudy052397" class="i-hero__info-link">¡Aprender gratis!</a>
-					<!-- <figure class="i-hero__img-tech-container">
-						<img src="./assets/svg/logo-html.svg" alt="HTML" width="64" height="64"
-							class="i-hero__img-tech" />
-						<img src="./assets/svg/logo-css.svg" alt="CSS" width="64" height="64"
-							class="i-hero__img-tech" />
-						<img src="./assets/svg/logo-js.svg" alt="JavaScript" width="64" height="64"
-							class="i-hero__img-tech" />
-						<img src="./assets/svg/logo-react.svg" alt="React" width="64" height="64"
-							class="i-hero__img-tech" />
-					</figure> -->
 				</div>
 			</div>
 		</article>

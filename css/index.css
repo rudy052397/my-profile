@@ -1,12 +1,12 @@
 :root {
   scroll-behavior: smooth;
-	--primary-theme-color: #20232a;
+	--primary-theme-color: #0f0f0f;
 	--secondary-theme-color: #282c34;
 	--primary-text-color: #fff;
 	--secondary-text-color: #eee;
 	--reverse-primary-text-color: #000;
-	--primary-shadow-color: #20232a80;
-	--secondary-shadow-color: #00000040;
+	--primary-shadow-color: #00000080;
+	--secondary-shadow-color: #1c1c1cf3;
 	--reverse-primary-shadow-color: #fff8;
 	--primary-highlight-color: #61dafb;
 	--secondary-highlight-color: gold;
@@ -22,6 +22,7 @@
 
 .body {
   background-color: rgb(255, 255, 255);
+  color: var(--primary-text-color);
   margin: 0;
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -29,11 +30,13 @@
 @media (min-width: 768px) {
   :root{
     --max-width-container: 1080px;
+    --padding-section: 1rem 0;
   }
 }
 
 .header-nav__menu-list-container {
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: space-around;
   list-style: none;
@@ -43,45 +46,11 @@
   
 }
 
-.header-nav__menu-link {
-  position: relative;
-  color: rgb(234, 234, 234);
-  font-size: 1rem;
-  font-weight: 300;
-  text-decoration: none;
-  /* font-weight: lighter; */
-  white-space: nowrap;
-  transition: color 0.3s;
-  box-sizing: border-box;
-  display: flex;
-}
 
-.header-nav__menu-link:hover,
-.header-nav__menu-link--active {
-  color: #f01313;
-  /* font-weight: bold; */
-  transform: scale(1.1);
-}
-
-.header-nav__menu-link::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -0.625rem;
-  height: 0.0625rem;
-  width: 0;
-  background-color: #f01313;
-  transition: width 0.25s ease-in-out;
-}
-
-.header-nav__menu-link:hover::before,
-.header-nav__menu-link--active::before {
-  width: 100%;
-}
 .i-hero {
   position: relative;
   display: flex;
-  z-index: 5;
+  /* z-index: -5; */
   /* align-items: center; */
   justify-content: center;
   height: 100vh;
@@ -97,7 +66,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--primary-shadow-color);
 }
 
 .i-hero__container {
@@ -212,7 +181,7 @@
 }
 .skills-bg{
   position: fixed;
-  /* z-index: 1; */
+  z-index: -5;
   top: 0;
   background-image: url('../assets/img/body-background.webp');
   width: 100%;
