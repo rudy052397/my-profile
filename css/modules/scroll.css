@@ -1,0 +1,40 @@
+.container--skill::-webkit-scrollbar {
+  height: 60px;
+  transition: all 0.5s;
+}
+
+.container--skill::-webkit-scrollbar-button:horizontal:start:decrement {
+  padding: 0 20px;
+  border-left: 200px solid transparent;
+  background-clip:content-box;
+  background-color: transparent;
+  background-image: url(https://elcssar.com/ejemplos/arrow_left.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+
+.container--skill::-webkit-scrollbar-button:horizontal:end:increment {
+  padding: 0 20px;
+  border-right: 200px solid transparent;
+  background-clip:content-box;
+  background-color: transparent;
+  background-image: url(https://elcssar.com/ejemplos/arrow_right.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
+  transition: all 0.5s;
+}
+.container--skill::-webkit-scrollbar-button:horizontal:start:hover,
+.container--skill::-webkit-scrollbar-button:horizontal:end:hover{
+  background-color: rgba(245, 255, 255, 0.244);
+}
+@media (pointer:coarse) {
+  .container--skill::-webkit-scrollbar {
+    height: 0;
+  }
+}

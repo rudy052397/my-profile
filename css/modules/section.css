@@ -1,5 +1,6 @@
 .section {
   padding: var(--padding-section);
+  overflow: hidden;
 }
 .section--headed {
   box-shadow: 0 0 0.0625rem 0.0625rem var(--reverse-primary-shadow-color);
@@ -7,8 +8,12 @@
 
 .section--skill{
   background-color: var(--primary-theme-color);
-  height: 100vh;
+  height: 600px;
+  box-sizing: border-box;
+  padding-bottom: 2rem;
+  
 }
+
 .container {
   max-width: var(--max-width-container);
   margin: 0 auto;
@@ -28,12 +33,18 @@
 }
 
 .container--skill{
+  position: relative;
   max-width: fit-content;
+  justify-content: space-between;
   display: flex;
   height: 100%;
   align-items: center;
-  gap: 0.25rem;
+  gap: 2rem;
+  overflow-x:auto;
 }
+
+
+
 
 @media (min-width: 768px) {
   .container--headed {
