@@ -1,0 +1,61 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card--hero {
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 448px;
+  text-align: center;
+}
+
+.card__header {
+  background-color: var(--secondary-theme-color);
+}
+
+.card__img {}
+
+
+.card__title {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+
+}
+
+.card__body {
+ padding: 1rem;
+ box-sizing: border-box;
+ text-align: center;
+}
+
+.card__body--skill{
+  background-color: var(--reverse-primary-theme-color);
+  color: var(--reverse-primary-text-color);
+}
+.card__subtitle {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+
+.card__text {}
+
+.card__body--skill,
+.card__header--skill {
+  width: 300px;
+  height: 200px;
+}
+
+@media (min-width:768px) {
+  .card__title {
+    font-size: 3rem;
+
+  }
+
+  .card__subtitle {
+    font-size: 1.5rem;
+  }
+}

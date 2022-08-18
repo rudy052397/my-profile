@@ -1,7 +1,14 @@
+.section {
+  padding: var(--padding-section);
+}
 .section--headed {
   box-shadow: 0 0 0.0625rem 0.0625rem var(--reverse-primary-shadow-color);
 }
 
+.section--skill{
+  background-color: var(--primary-theme-color);
+  height: 100vh;
+}
 .container {
   max-width: var(--max-width-container);
   margin: 0 auto;
@@ -12,6 +19,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.container--hero{
+  display: flex;
+  align-items: center;
+  z-index: 5;
+}
+
+.container--skill{
+  max-width: fit-content;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 @media (min-width: 768px) {
