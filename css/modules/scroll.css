@@ -1,14 +1,15 @@
-.container--skill::-webkit-scrollbar {
+.skills::-webkit-scrollbar {
   height: 60px;
   transition: all 0.5s;
 }
 
-.container--skill::-webkit-scrollbar-button:horizontal:start:decrement {
+.skills::-webkit-scrollbar-button:horizontal:start:decrement {
   padding: 0 20px;
-  border-left: 200px solid transparent;
+  /* border-left: 40px solid transparent;
+  border-right: 40px solid transparent; */
   background-clip:content-box;
   background-color: transparent;
-  background-image: url(https://elcssar.com/ejemplos/arrow_left.png);
+  background-image: url(../../assets/svg/flecha-left-ini.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -17,24 +18,31 @@
   border-radius: 10px;
 }
 
-.container--skill::-webkit-scrollbar-button:horizontal:end:increment {
+.skills::-webkit-scrollbar-button:horizontal:end:increment {
   padding: 0 20px;
-  border-right: 200px solid transparent;
+  /* border-left: 40px solid transparent;
+  border-right: 40px solid transparent; */
   background-clip:content-box;
   background-color: transparent;
-  background-image: url(https://elcssar.com/ejemplos/arrow_right.png);
+  background-image: url(../../assets/svg/flecha-rigth-ini.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  transform: rotate(180deg);
   width: 50%;
-  transition: all 0.5s;
+  transition: all 1s;
 }
-.container--skill::-webkit-scrollbar-button:horizontal:start:hover,
-.container--skill::-webkit-scrollbar-button:horizontal:end:hover{
-  background-color: rgba(245, 255, 255, 0.244);
+.skills::-webkit-scrollbar-button:horizontal:start:hover{
+  background-image: url(../../assets/svg/flecha-left-hov.svg);
 }
+.skills::-webkit-scrollbar-button:horizontal:end:hover{
+  /* background-color: rgba(245, 255, 255, 0.244); */
+  background-image: url(../../assets/svg/flecha-rigth-hov.svg);
+}
+
+
 @media (pointer:coarse) {
-  .container--skill::-webkit-scrollbar {
+  .skills::-webkit-scrollbar {
     height: 0;
   }
 }

@@ -17,6 +17,7 @@
 	--primary-font-family: 'inconsolata', monospace;
 	--padding-section: 1.5rem 0;
 	--padding-container: 0 1rem;
+  --padding-card: 0.4rem;
 	--max-width-container: 640px;
 	--primary-border-radius: 0.5rem;
 }
@@ -30,8 +31,9 @@
 
 @media (min-width: 768px) {
   :root{
-    --max-width-container: 1080px;
+    --max-width-container: 1500px;
     --padding-section: 1rem 0;
+    --padding-card: 1rem;
     /* --primary-shadow-color: #00000000; */
   }
 }
@@ -48,10 +50,17 @@
 
 .skills {
   display: flex;
+  position: relative;
+  width: 100%;
+  flex: 1;
   align-items: center;
-  background-color: rgb(31, 31, 31);
-  background-color: transparent;
-  height: 100vh;
+  /* justify-content: space-around; */
+  gap: 4rem;
+  overflow-x:auto;
+}
+.skills__title{
+  color: black;
+  margin: 0;
 }
 .skills-bg{
   position: fixed;

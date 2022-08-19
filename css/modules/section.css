@@ -7,10 +7,10 @@
 }
 
 .section--skill{
-  background-color: var(--primary-theme-color);
-  height: 600px;
+  /* background-color: green;; */
+  height: 700px;
   box-sizing: border-box;
-  padding-bottom: 2rem;
+  padding-top: 5rem;
   
 }
 
@@ -33,14 +33,13 @@
 }
 
 .container--skill{
-  position: relative;
-  max-width: fit-content;
-  justify-content: space-between;
-  display: flex;
-  height: 100%;
-  align-items: center;
-  gap: 2rem;
-  overflow-x:auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+/* justify-content: center; */
+height: 100%;
+
+gap: 2rem;
 }
 
 
