@@ -1,0 +1,14 @@
+.mot__img-container{
+  position: fixed;
+  background-image: url('../../assets/img/body-background.webp');
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+.moti__text-container{
+  max-width: 30rem;
+}

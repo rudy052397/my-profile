@@ -1,5 +1,5 @@
 .skills::-webkit-scrollbar {
-  height: 60px;
+  height: 2rem;
   transition: all 0.5s;
 }
 
