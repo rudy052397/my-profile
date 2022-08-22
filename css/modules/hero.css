@@ -1,5 +1,5 @@
 .hero {
-  position: relative;
+
   display: flex;
   justify-content: center;
   height: 100vh;
@@ -7,6 +7,8 @@
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: hero-img 15s infinite;
 }
 
 .hero::before {
@@ -16,5 +18,5 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: var(--primary-shadow-color);
+  background-color: var(--tertiary-shadow-color);
 }

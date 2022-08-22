@@ -41,3 +41,12 @@
     width: 71px;
   }
 }
+
+.footer{
+  border-top: 0.125rem solid var(--reverse-primary-shadow-color);
+  background-color: var(--secondary-theme-color);
+}
+.footer__link {
+  color: var(--primary-highlight-color);
+  text-decoration: none;
+}

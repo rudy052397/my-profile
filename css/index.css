@@ -8,6 +8,7 @@
 	--reverse-primary-text-color: #000;
 	--primary-shadow-color: #00000080;
 	--secondary-shadow-color: #000000ee;
+  --tertiary-shadow-color:rgba(0, 0, 0, 0.363);
 	--reverse-primary-shadow-color: #fff8;
 	--primary-highlight-color: #61dafb;
 	--secondary-highlight-color: gold;
@@ -24,7 +25,7 @@
 
 @media (min-width: 768px) {
   :root{
-    --max-width-container: 1500px;
+    --max-width-container: 1200px;
     --padding-section: 1rem 0;
     --padding-card: 1rem;
     /* --primary-shadow-color: #00000000; */

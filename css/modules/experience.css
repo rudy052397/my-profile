@@ -1,0 +1,16 @@
+.experience{
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  gap: 2rem;
+}
+.mod-osc{
+  display: none ;
+}
+.mod-osc__label{
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  color: black;
+}
