@@ -1,16 +1,28 @@
 .experience{
   display: flex;
   flex-direction: column;
-  /* width: 100%; */
   gap: 2rem;
+  padding: 0 2rem;
+  
 }
 .mod-osc{
   display: none ;
 }
 .mod-osc__label{
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 4rem;
+  right: 10%;
   font-size: 2rem;
   color: black;
+  z-index: 30;
+  /* color: white; */
+}
+
+@media (min-width:768px) {
+  .mod-osc__label{
+    right: 30%;
+  }
+}
+.mod-osc:checked + .mod-osc__label{
+  color: white;
 }

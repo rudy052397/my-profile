@@ -10,8 +10,6 @@
   text-align: center;
 }
 .card--exp {
-  position: relative;
-  /* background-color: var(--reverse-primary-text-color); */
   color: var(--reverse-primary-text-color);
   max-width: 30rem;
   box-shadow: 0 0 10px -6px black;
@@ -20,9 +18,10 @@
   
 }
 .card--exp1{
-  background-color: #222222;
+  background-color: #222;
+  position: relative;
   color: var(--primary-text-color);
-  filter: opacity(0%);
+  text-shadow: 0 0 10px var(--primary-highlight-color);
 }
 
 .card--exp1::before {
@@ -33,13 +32,9 @@
   top: 0;
   width: 50%;
   height: 50%;
-  box-shadow: 0 0 17px 3px #ffff01, 0 0 4px;
-
-  animation-name: yellow-shadow;
-  animation-timing-function: ease;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+  box-shadow: 0 0 17px 3px #ffff01, 0 0 4px #ffff01;
   border-radius: 20px;
+  animation: yellow-shadow 4s ease infinite;
 }
 .card--exp1::after {
   content: "";
@@ -50,11 +45,8 @@
   height: 50%;
   box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
   z-index: -1;
-  animation-name: cyan-shadow;
-  animation-timing-function: ease;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  border-radius: 5px;
+  border-radius: 20px;
+  animation: cyan-shadow 4s ease infinite;
 }
 .card__header {
   background-color: rgb(255, 255, 255);
