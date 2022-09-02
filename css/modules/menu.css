@@ -7,8 +7,8 @@
 
 .menu--hamburger {
   position: fixed;
-	z-index: -25;
-  top: 65px;
+  z-index: -51;
+  top: 64px;
   left: 0;
   flex-direction: column;
   align-items: center;
@@ -18,15 +18,15 @@
   height: 0;
   overflow: hidden;
   background-color: var(--secondary-shadow-color);
-  transition: height 0.4s ease-in-out;
+  transition: height 0.4s ease-in-out, top 0.4s;
 }
 
-.menu--footer{
+.menu--footer {
   gap: 2rem;
 }
 @media (min-width: 768px) {
   .menu--hamburger {
-		z-index: 0;
+    z-index: 0;
     position: static;
     flex-direction: row;
     overflow: visible;
@@ -36,9 +36,9 @@
   }
 }
 
-.menu__checkbox:checked ~ .menu--hamburger {
+.menu--hamburger-despleged {
   height: 100%;
-	top:0;
+  top: 0;
 }
 
 .menu__checkbox {
@@ -122,12 +122,12 @@
 }
 
 @media (min-width: 768px) {
-  .menu__link{
+  .menu__link {
     font-size: 1.0625rem;
   }
   .menu__link:hover,
   .menu__link--active {
-		color: var(--primary-text-color);
+    color: var(--primary-text-color);
     transform: scale(1.1);
   }
 }
@@ -143,9 +143,9 @@
   transition: width 0.25s ease-in-out;
 }
 @media (min-width: 768px) {
-	.menu__link::before {
-		background-color: var(--primary-text-color)
-	}
+  .menu__link::before {
+    background-color: var(--primary-text-color);
+  }
 }
 
 .menu__link:hover::before,

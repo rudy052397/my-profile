@@ -1,9 +1,22 @@
 .header {
   position: fixed;
-  top: 0;
+  top: 0; 
   left: 0;
   width: 100%;
   z-index: 50;
+  background-color: var(--primary-shadow-color);
+}
+.header::after{
+  content: '';
+  height: 0px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0 0 0.0625rem 0.0625rem var(--reverse-primary-shadow-color);
+}
+.header-despleged {
+  /* background-color: var(--primary-theme-color); */
+  background-color: #000;
 }
 .header-style {
   position: absolute;
