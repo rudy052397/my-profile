@@ -1,0 +1,49 @@
+:root {
+	scroll-behavior: smooth;
+	--primary-theme-color: #0f0f0f;
+  --reverse-primary-theme-color:#fff;
+	--secondary-theme-color: #282c34;
+	--tertiary-theme-color:#999999;
+	--primary-text-color: #fff;
+	--secondary-text-color: #eee;
+	--reverse-primary-text-color: #000;
+	--primary-shadow-color: #00000080;
+	--secondary-shadow-color: #000000ee;
+  --tertiary-shadow-color:rgba(0, 0, 0, 0.363);
+	--reverse-primary-shadow-color: #fff8;
+	--primary-highlight-color: #61dafb;
+	--secondary-highlight-color: gold;
+	--primary-button-color: #f75656;
+	--secondary-button-color: gold;
+	--primary-invalid-color: crimson;
+	--primary-font-family: 'inconsolata', monospace;
+	--padding-section: 1.5rem 0;
+	--padding-container: 0 1rem;
+  --padding-card: 0.4rem;
+	--max-width-container: 640px;
+	--primary-border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  :root{
+    --max-width-container: 1200px;
+    --padding-section: 1rem 0;
+    --padding-card: 1rem;
+  }
+}
+
+.body {
+  background-color: rgb(255, 255, 255);
+  color: var(--primary-text-color);
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.experience {
+  /* background-color: #282c34; */
+  background-color: transparent;
+}
+
+.experiencetitle {
+  margin: 0;
+}
+

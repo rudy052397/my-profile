@@ -1,0 +1,106 @@
+.card {
+  @include d-flex-fd-ai-fc-g(row, center, center, 0);
+  flex-direction: column;
+
+  &--hero {
+    gap: 1.5rem;
+    max-width: 448px;
+    text-align: center;
+  }
+
+  &--exp {
+    
+    color: var(--reverse-primary-text-color);
+    max-width: 30rem;
+    box-shadow: 0 0 10px -6px black;
+    border-radius: 20px;
+    padding: 2rem;
+    align-items: initial;
+  }
+
+  &--exp1 {
+    background-color: #222;
+    position: relative;
+    color: var(--primary-text-color);
+    text-shadow: 0 0 10px var(--primary-highlight-color);
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0px;
+      top: 0;
+      width: 50%;
+      height: 50%;
+      box-shadow: 0 0 17px 3px #ffff01, 0 0 4px #ffff01;
+      border-radius: 20px;
+      animation: yellow-shadow 4s ease infinite;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      height: 50%;
+      box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+      z-index: -1;
+      border-radius: 20px;
+      animation: cyan-shadow 4s ease infinite;
+    }
+  }
+
+  &__header {
+    background-color: rgb(255, 255, 255);
+  }
+
+  &__img {
+    width: 80px;
+    height: 80px;
+
+    @include desktop {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    @include desktop {
+
+      font-size: 2rem;
+    }
+  }
+
+  &__body {
+    position: absolute;
+    padding: var(--padding-card);
+    box-sizing: border-box;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 300;
+
+    @include desktop {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0;
+    color: rgb(6, 6, 6);
+
+    @include desktop {
+      font-size: 1.125rem;
+    }
+  }
+}

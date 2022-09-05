@@ -1,0 +1,18 @@
+@mixin d-flex-fd-ai-fc-g($flex-direction: initial, $align-items: initial, $justify-content: initial, $gap: initial) {
+  display: flex;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  gap: $gap;
+}
+
+@mixin desktop {
+  @media (min-width:768px) {
+    @content;
+  }
+}
+@mixin touch{
+  @media (pointer:coarse) {
+    @content;
+  }
+}

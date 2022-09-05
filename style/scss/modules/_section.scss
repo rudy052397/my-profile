@@ -1,0 +1,132 @@
+.section {
+  padding: var(--padding-section);
+  overflow: hidden;
+
+  &--headed {
+    box-shadow: 0 0 0.0625rem 0.0625rem var(--reverse-primary-shadow-color);
+  }
+
+  &--skill {
+    @include d-flex-fd-ai-fc-g(initial, center, initial, initial);
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 5rem;
+    background-color: var(--reverse-primary-theme-color);
+  }
+
+  &--mot {
+    height: 270px;
+  }
+
+  &--exp {
+    @include d-flex-fd-ai-fc-g(initial, initial, center, initial);
+    padding: 0;
+    position: relative;
+    background: var(--reverse-primary-theme-color);
+    background: radial-gradient(circle,
+        rgba(254, 254, 254, 1) 25%,
+        rgba(236, 236, 236, 1) 65%,
+        rgba(233, 233, 233, 1) 96%);
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 1.75rem;
+    margin: 0;
+
+    &--exp {
+      color: var(--reverse-primary-text-color);
+      font-size: 3em;
+      text-align: center;
+    }
+    &--exp1 {
+      font-size: 3em;
+      text-align: center;
+      filter: opacity(0%);
+      animation: neonGlow 2s infinite alternate;
+    }
+  }
+
+
+
+  &__title--skills {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #303030;
+    z-index: 10;
+  }
+
+  &__title--moti {
+    font-size: 2.5rem;
+  }
+}
+
+.container {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+  padding: var(--padding-container);
+  background-clip: border-box;
+
+  &--headed {
+    @include d-flex-fd-ai-fc-g(initial, center, space-between, initial);
+
+    @include desktop {
+      gap: 1.5rem;
+    }
+  }
+
+  &--hero {
+    @include d-flex-fd-ai-fc-g(initial, center, initial, initial);
+    z-index: 5;
+  }
+
+  &--skill {
+    @include d-flex-fd-ai-fc-g(column, center, initial, 2rem);
+    max-width: 1500px;
+    box-sizing: border-box;
+    width: 100vw;
+  }
+
+  &--mot {
+    @include d-flex-fd-ai-fc-g(initial, center, initial, initial);
+    height: 100%;
+    padding-left: 5rem;
+  }
+
+  &--exp {
+    @include d-flex-fd-ai-fc-g(column, center, initial, 2rem);
+    margin: 0;
+    width: 100vw;
+    z-index: 0;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    background-clip: border-box;
+    transition: all 0.4s;
+  }
+
+  &--exp1 {
+    position: absolute;
+    z-index: 0;
+    background-color: #222222;
+    filter: opacity(0%);
+  }
+}
+
+
+
+
+
+.mod-osc:checked~.container--exp1 {
+  filter: opacity(100%);
+}
+
+.mod-osc:checked~.container--exp1 .section__title--exp1 {
+  filter: opacity(100%);
+}
+
+.container--footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}

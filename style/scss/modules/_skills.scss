@@ -1,0 +1,204 @@
+.skill {
+  --scroll-width: 0;
+  @include d-flex-fd-ai-fc-g(initial, center, initial, 2rem);
+  width: 100%;
+  height: 400px;
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  @include touch{
+    overflow: auto;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: var(--scroll-width);
+    // width: 0px;
+    z-index: 5;
+    background-color: var(--tertiary-theme-color);
+    transition: width 0.2s ease-in-out;
+  }
+
+  @include desktop {
+    gap: 4rem;
+    height: 500px;
+  }
+
+  &-tech {
+    @include d-flex-fd-ai-fc-g(initial, center, initial, initial);
+    position: relative;
+
+    &__header,
+    &__body {
+      width: 225px;
+      height: 150px;
+      transition: all 0.4s ease-in-out;
+      box-shadow: none;
+      border-radius: 20px;
+
+      @include desktop {
+        width: 300px;
+        height: 200px;
+      }
+    }
+
+    &__header {
+      @include d-flex-fd-ai-fc-g(initial, center, center, initial);
+      position: relative;
+      background-color: white;
+      box-shadow: #959da533 0px 8px 24px;
+      z-index: 10;
+
+      .skill-tech:hover & {
+        transform: translateY(-50%);
+        background-color: #484848;
+        box-shadow: #00000029 0px 3px 6px, #0000003b 0px 3px 6px;
+      }
+    }
+
+    &__body {
+      position: absolute;
+      text-align: center;
+      padding: 1rem;
+      background-color: #ffffff;
+      box-sizing: border-box;
+      z-index: 5;
+
+      .skill-tech:hover & {
+        transform: translateY(50%);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      }
+
+      .skill-tech:nth-child(1):hover & {
+        background: rgb(110, 175, 231);
+        background: rgb(255, 55, 55);
+        background: linear-gradient(-45deg, rgba(255, 55, 55, 1) 18%, rgba(255, 127, 95, 1) 46%, rgba(255, 135, 15, 1) 81%);
+      }
+
+      .skill-tech:nth-child(2):hover & {
+        background: rgb(95, 166, 255);
+        background: linear-gradient(-45deg, rgba(95, 166, 255, 1) 22%, rgba(118, 21, 255, 1) 57%, rgba(74, 34, 255, 1) 83%);
+      }
+
+      .skill-tech:nth-child(3):hover & {
+        background: rgb(255, 237, 34);
+        background: linear-gradient(-45deg, rgba(255, 237, 34, 1) 20%, rgba(255, 218, 30, 1) 53%, rgba(255, 213, 95, 1) 93%);
+      }
+
+      .skill-tech:nth-child(4):hover & {
+        background: rgb(110, 175, 231);
+        background: linear-gradient(to bottom right, rgba(110, 175, 231, 1) 0%, rgba(47, 197, 200, 1) 53%, rgba(0, 212, 255, 1) 100%);
+      }
+
+    }
+
+    &__img {
+      width: 80px;
+      height: 80px;
+      filter: grayscale(1) opacity(30%);
+      transition: filter 0.4s ease-in-out, transform 0.4s;
+
+      @include desktop {
+        width: 100px;
+        height: 100px;
+      }
+
+      .skill-tech:hover & {
+        filter: grayscale(0) opacity(100%);
+        transform: translateY(20%);
+      }
+    }
+
+    &__title {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin: 0;
+      color: #202020;
+      transition: all 0.4s;
+
+      @include desktop {
+        font-size: 2rem;
+      }
+
+      .skill-tech:hover & {
+        font-family: 'Rubik Dirt';
+        text-shadow: 0 0 0.7rem --primary-highlight-color;
+        top: 7%;
+        transform: scale(1.2);
+        font-weight: 300;
+      }
+
+      .skill-tech:hover &--html {
+        color: #e44f26;
+      }
+
+      .skill-tech:hover &--css {
+        color: #264DE4;
+      }
+
+      .skill-tech:hover &--js {
+        color: #F1DC50;
+      }
+
+      .skill-tech:hover &--react {
+        color: #00D8FF;
+      }
+    }
+
+    &__text {
+      margin: 0;
+      font-size: 0.8rem;
+      color: var(--reverse-primary-text-color);
+
+      @include desktop {
+        font-size: 1.125rem;
+      }
+    }
+  }
+
+  &-bg-style {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0% at 100% 50%);
+    transition: clip-path 0.6s ease-in-out;
+    background: rgb(110, 175, 231);
+    background: linear-gradient(to bottom right, rgba(110, 175, 231, 1) 0%, rgba(47, 197, 200, 1) 53%, rgba(0, 212, 255, 1) 100%);
+
+    .skill-tech:nth-child(1):hover~& {
+      clip-path: circle(130% at 100% 50%);
+      background: rgb(255, 55, 55);
+      background: linear-gradient(-45deg, rgba(255, 55, 55, 1) 18%, rgba(255, 127, 95, 1) 46%, rgba(255, 135, 15, 1) 81%);
+
+    }
+
+    .skill-tech:nth-child(2):hover~& {
+      clip-path: circle(97% at 100% 50%);
+      background: rgb(95, 166, 255);
+      background: linear-gradient(-45deg, rgba(95, 166, 255, 1) 22%, rgba(118, 21, 255, 1) 57%, rgba(74, 34, 255, 1) 83%);
+
+    }
+
+    .skill-tech:nth-child(3):hover~& {
+      clip-path: circle(67% at 100% 50%);
+      background: rgb(255, 237, 34);
+      background: linear-gradient(-45deg, rgba(255, 237, 34, 1) 20%, rgba(255, 218, 30, 1) 53%, rgba(255, 213, 95, 1) 93%);
+    }
+
+    .skill-tech:nth-child(4):hover~& {
+      clip-path: circle(37% at 100% 50%);
+      background: rgb(110, 175, 231);
+      background: linear-gradient(to bottom right, rgba(110, 175, 231, 1) 0%, rgba(47, 197, 200, 1) 53%, rgba(0, 212, 255, 1) 100%);
+    }
+  }
+}
